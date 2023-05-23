@@ -11,16 +11,17 @@
     <title>Hello, world!</title>
     {% endblock %}
   </head>
-  <center>
   <body>
-   <nav class="nav">
+    <center>
+   <nav class="nav" style="background-color: brown;">
       
-    <a href="{% url 'admin:index' %}" class="nav-link">ADMINPAGE</a>
+    <a href="{% url 'admin:index' %}" class="nav-link"  style="background-color: rgb(127, 139, 0);">ADMINPAGE</a>
 
-    <a href="{% url 'home' %}" class="nav-link">HOMEPAGE</a>
+    <a href="{% url 'home' %}" class="nav-link" style="background-color: aqua;">HOMEPAGE</a>
 
-    <a href="{% url 'school_list' %}" class="nav-link">school_list</a>
-
+    <a href="{% url 'school_list' %}" class="nav-link" style="background-color: rgb(255, 0, 115);">school_list</a>
+    
+    <a href="{% url 'school_create' %}" class="nav-link" style="background-color:pink;">school_create</a>
    </nav>
 
     <!-- Optional JavaScript; choose one of the two! -->
@@ -38,6 +39,6 @@
     {% block body_block %} 
 
     {% endblock %}
+  </center>
   </body>
-</center>
 </html>

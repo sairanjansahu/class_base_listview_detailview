@@ -18,9 +18,13 @@
    
    <h3>{{i.school}} student name is {{i.sname}}</h3>
 
-   <h3>{{i.school}} student age is {{i.sage}}</h3>
+   <h3>{{i.sname}} age is {{i.sage}}</h3>
 
 
    {% endfor %} 
+
+   <h1><a href="{% url 'school_update' pk=sclobject.pk %}" class="btn btn-primary">school_update</a></h1>
+
+   <h1><a href="{% url 'school_delete' pk=sclobject.pk %}" class="btn btn-danger">school_delete</a></h1>
 
 {% endblock %} 
